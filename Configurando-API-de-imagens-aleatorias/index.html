@@ -1,0 +1,183 @@
+<!DOCTYPE html><html lang="pt-BR" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Configurando API De Imagens Aleatórias | Hamasaki</title><meta name="keywords" content="API"><meta name="author" content="Celso T"><meta name="copyright" content="Celso T"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Recentemente montei um site para a minha mãe (www.larapwa.com.br) através do Hexo Framework com o tema Shoka e encontrei alguns desafios referentes a quantidade de pacotes obsoletos (deprecated).Um de">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Configurando API De Imagens Aleatórias">
+<meta property="og:url" content="hhttps://test83784.github.io/hx/Configurando-API-de-imagens-aleatorias/index.html">
+<meta property="og:site_name" content="Hamasaki">
+<meta property="og:description" content="Recentemente montei um site para a minha mãe (www.larapwa.com.br) através do Hexo Framework com o tema Shoka e encontrei alguns desafios referentes a quantidade de pacotes obsoletos (deprecated).Um de">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:image" content="https://cth.jp/img2/gradient-api-infographic_23-2149379657.webp">
+<meta property="article:published_time" content="2022-10-20T13:59:30.000Z">
+<meta property="article:modified_time" content="2022-10-21T00:50:36.987Z">
+<meta property="article:author" content="Celso T">
+<meta property="article:tag" content="API">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cth.jp/img2/gradient-api-infographic_23-2149379657.webp"><link rel="shortcut icon" href="/hx/img/favicon.png"><link rel="canonical" href="hhttps://test83784.github.io/hx/Configurando-API-de-imagens-aleatorias/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/hx/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/hx/',
+  algolia: {"appId":"1K28MHQJNC","apiKey":"068cb2c553fa4849190a29fea82329c2","indexName":"Hamasaki","hits":{"per_page":6},"languages":{"input_placeholder":"Procurar por postagens","hits_empty":"Não encontrei nenhum resultado para: ${query}.","hits_stats":"${hits} resultados encontratos em ${time} ms"}},
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: {"limitDay":300,"position":"top","messagePrev":"Foram","messageNext":"dias desde o última atualização, o conteúdo do artigo pode estar desatualizado."},
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Agora',
+    min: 'Minutos',
+    hour: 'horas',
+    day: 'dias',
+    month: 'meses'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Configurando API De Imagens Aleatórias',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '20-10-2022 21:50:36'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/hx/archives/"><div class="headline">Artigos</div><div class="length-num">36</div></a><a href="/hx/tags/"><div class="headline">Tags</div><div class="length-num">35</div></a><a href="/hx/categories/"><div class="headline">Categorias</div><div class="length-num">4</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/hx/"><i class="fa-fw fas fa-home"></i><span> Início</span></a></div><div class="menus_item"><a class="site-page" href="/hx/about/"><i class="fa-fw fas fa-heart"></i><span> Sobre mim</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cth.jp/img2/gradient-api-infographic_23-2149379657.webp')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/hx/">Hamasaki</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> Pesquisar</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/hx/"><i class="fa-fw fas fa-home"></i><span> Início</span></a></div><div class="menus_item"><a class="site-page" href="/hx/about/"><i class="fa-fw fas fa-heart"></i><span> Sobre mim</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Configurando API De Imagens Aleatórias</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Criado em</span><time class="post-meta-date-created" datetime="2022-10-20T13:59:30.000Z" title="Criado em 20-10-2022 10:59:30">20-10-2022</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Atualizado em</span><time class="post-meta-date-updated" datetime="2022-10-21T00:50:36.987Z" title="Atualizado em 20-10-2022 21:50:36">20-10-2022</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/hx/categories/Informatica/">Informática</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Configurando API De Imagens Aleatórias"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Visualizações:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>Recentemente montei um site para a minha mãe (<a target="_blank" rel="noopener" href="http://www.larapwa.com.br/">www.larapwa.com.br</a>) através do Hexo Framework com o tema Shoka e encontrei alguns desafios referentes a quantidade de pacotes obsoletos (deprecated).<br>Um desses desafios foi a atualização do api de imagens aleatórias que estava hospedado em um servidor inexistente. A solução foi criar e hospedar um novo api em meu servidor do VULTR.<br>A utilização é bem simples: O api é abastecido com links de imagens, este qual seleciona aleatoriamente quais aparecerão no cabeçalho e nas postagens do site.</p>
+<p><strong>Como fazer?</strong></p>
+<p>Primeiro crie uma pasta chamada api no servidor de hospedagem e, em seguida, crie um novo arquivo index.php na pasta. O conteúdo do arquivo é:</p>
+<pre><code>&lt;?php
+//Nome do arquivo com link
+$filename = &quot;img.txt&quot;;
+if(!file_exists($filename))&#123;
+    die(&#39;Arquivo não encontrado&#39;);
+&#125;
+ 
+//Obtem link do texto
+$pics = [];
+$fs = fopen($filename, &quot;r&quot;);
+while(!feof($fs))&#123;
+    $line=trim(fgets($fs));
+    if($line!=&#39;&#39;)&#123;
+        array_push($pics, $line);
+    &#125;
+&#125;
+ 
+//Obtem links aleatoriamente de uma matriz
+$pic = $pics[array_rand($pics)];
+ 
+//Retorna o formato especificado
+$type=$_GET[&#39;type&#39;];
+switch($type)&#123;
+ 
+//JSON
+case &#39;json&#39;:
+    header(&#39;Content-type:text/json&#39;);
+    die(json_encode([&#39;pic&#39;=&gt;$pic]));
+ 
+default:
+    die(header(&quot;Location: $pic&quot;));
+&#125;
+</code></pre>
+<p>Após salvar, crie um novo arquivo de texto chamado img.txt,<br>Em seguida, escreva o link da imagem a ser carregada, um link por linha.<br>Por exemplo: <a target="_blank" rel="noopener" href="https://larapwa.com.br/img.txt">https://larapwa.com.br/img.txt</a></p>
+<p>Depois, carregue toda a pasta api para o diretório do site e uma imagem aleatória aparecerá quando for acessado!</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Autor: </span><span class="post-copyright-info"><a href="hhttps://test83784.github.io/hx">Celso T</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="hhttps://test83784.github.io/hx/Configurando-API-de-imagens-aleatorias/">hhttps://test83784.github.io/hx/Configurando-API-de-imagens-aleatorias/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/hx/tags/API/">API</a></div><div class="post_share"><div class="social-share" data-image="https://cth.jp/img2/gradient-api-infographic_23-2149379657.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/hx/Jogos-online-e-criptomoedas/"><img class="prev-cover" src="https://cth.jp/img2/blog-hero-Best-NFT-Games-To-Play-And-Invest-In-2022.jpg" onerror="onerror=null;src='/hx/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">Postagem anterior</div><div class="prev_info">Jogos Online E Criptomoedas</div></div></a></div><div class="next-post pull-right"><a href="/hx/O-Fim-do-Japao-A-Ucrania-do-Extremo-Oriente/"><img class="next-cover" src="https://cth.jp/img2/GettyImages-599075906.jpg" onerror="onerror=null;src='/hx/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">Postagem posterior</div><div class="next_info">O Fim Do Japão - a Ucrânia Do Extremo Oriente</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/hx/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Celso T</div><div class="author-info__description">Investimentos, Informática e Política Internacional</div></div><div class="card-info-data site-data is-center"><a href="/hx/archives/"><div class="headline">Artigos</div><div class="length-num">36</div></a><a href="/hx/tags/"><div class="headline">Tags</div><div class="length-num">35</div></a><a href="/hx/categories/"><div class="headline">Categorias</div><div class="length-num">4</div></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Anúncio</span></div><div class="announcement_content">Em construção! Muitas das postagens são antigos resumos para estudo e ainda não foram revisados</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Postagens recentes</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/hx/As-melhores-VPN-para-brasileiros/" title="As Melhores VPN Para Brasileiros"><img src="https://cth.jp/img2/server-room-rack-blockchain-technology-token-api-access-data-center_39422-442.webp" onerror="this.onerror=null;this.src='/hx/img/404.jpg'" alt="As Melhores VPN Para Brasileiros"/></a><div class="content"><a class="title" href="/hx/As-melhores-VPN-para-brasileiros/" title="As Melhores VPN Para Brasileiros">As Melhores VPN Para Brasileiros</a><time datetime="2022-12-09T18:11:12.000Z" title="Criado em 09-12-2022 15:11:12">09-12-2022</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/hx/Jogos-online-e-criptomoedas/" title="Jogos Online E Criptomoedas"><img src="https://cth.jp/img2/blog-hero-Best-NFT-Games-To-Play-And-Invest-In-2022.jpg" onerror="this.onerror=null;this.src='/hx/img/404.jpg'" alt="Jogos Online E Criptomoedas"/></a><div class="content"><a class="title" href="/hx/Jogos-online-e-criptomoedas/" title="Jogos Online E Criptomoedas">Jogos Online E Criptomoedas</a><time datetime="2022-10-20T23:06:50.000Z" title="Criado em 20-10-2022 20:06:50">20-10-2022</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/hx/Configurando-API-de-imagens-aleatorias/" title="Configurando API De Imagens Aleatórias"><img src="https://cth.jp/img2/gradient-api-infographic_23-2149379657.webp" onerror="this.onerror=null;this.src='/hx/img/404.jpg'" alt="Configurando API De Imagens Aleatórias"/></a><div class="content"><a class="title" href="/hx/Configurando-API-de-imagens-aleatorias/" title="Configurando API De Imagens Aleatórias">Configurando API De Imagens Aleatórias</a><time datetime="2022-10-20T13:59:30.000Z" title="Criado em 20-10-2022 10:59:30">20-10-2022</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/hx/O-Fim-do-Japao-A-Ucrania-do-Extremo-Oriente/" title="O Fim Do Japão - a Ucrânia Do Extremo Oriente"><img src="https://cth.jp/img2/GettyImages-599075906.jpg" onerror="this.onerror=null;this.src='/hx/img/404.jpg'" alt="O Fim Do Japão - a Ucrânia Do Extremo Oriente"/></a><div class="content"><a class="title" href="/hx/O-Fim-do-Japao-A-Ucrania-do-Extremo-Oriente/" title="O Fim Do Japão - a Ucrânia Do Extremo Oriente">O Fim Do Japão - a Ucrânia Do Extremo Oriente</a><time datetime="2022-10-19T23:22:25.000Z" title="Criado em 19-10-2022 20:22:25">19-10-2022</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/hx/Swap/" title="Swap"><img src="https://cth.jp/img2/illustration-bitcoin-concept_53876-40807.avif" onerror="this.onerror=null;this.src='/hx/img/404.jpg'" alt="Swap"/></a><div class="content"><a class="title" href="/hx/Swap/" title="Swap">Swap</a><time datetime="2022-10-19T13:21:00.000Z" title="Criado em 19-10-2022 10:21:00">19-10-2022</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div id="algolia-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">Pesquisar</span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="search-wrap"><div id="algolia-search-input"></div><hr/><div id="algolia-search-results"><div id="algolia-hits"></div><div id="algolia-pagination"></div><div id="algolia-info"><div class="algolia-stats"></div><div class="algolia-poweredBy"></div></div></div></div></div><div id="search-mask"></div></div><div><script src="/hx/js/utils.js"></script><script src="/hx/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/algoliasearch/dist/algoliasearch-lite.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instantsearch.js/dist/instantsearch.production.min.js"></script><script src="/hx/js/search/algolia.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/fireworks.min.js"></script><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-fluttering-ribbon.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/metingjs/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
